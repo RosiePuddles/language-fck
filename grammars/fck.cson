@@ -1,0 +1,19 @@
+'scopeName': 'source.fck'
+'name': 'fck'
+'fileTypes': ['fck']
+
+'patterns': [
+    {
+        'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+        'name': 'constant.numeric.fck'
+    },
+    {
+        'match': '\\b(def)\\s+(\\w+)\\s*\\(.*\\)'
+        'captures':
+            '1':
+                'name': 'keyword.control.fck'
+            '2':
+                'name': 'entity.name.function.fck'
+        'name': 'meta.function.fck'
+    }
+]
